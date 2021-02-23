@@ -91,7 +91,7 @@ scTyper<- function(seurat.object=NULL,
   cell.typing.method=match.arg(cell.typing.method)
   level=match.arg(level)
   slot=match.arg(slot)
-  NTP.gene.filter.method=match.arg(NTP.g.filter.method)
+  NTP.g.filter.method=match.arg(NTP.g.filter.method)
   NTP.distance=match.arg(NTP.distance)
   NTP.norm.method=match.arg(NTP.norm.method)
   feature.to.test=match.arg(feature.to.test)
@@ -121,10 +121,10 @@ scTyper<- function(seurat.object=NULL,
 
   # default outdirs
   qc.dir <- file.path(wd, output.name, "00_qc")
-  count.dir <- file.path(wd, output.name,　"01_count")
-  ntp.dir <- file.path(wd, output.name,　"02_NTP")
-  inferCNV.dir  <- file.path(wd, output.name,　"03_inferCNV")
-  rda.dir <- file.path(wd, output.name,　"data")
+  count.dir <- file.path(wd, output.name,"01_count")
+  ntp.dir <- file.path(wd, output.name,"02_NTP")
+  inferCNV.dir  <- file.path(wd, output.name,"03_inferCNV")
+  rda.dir <- file.path(wd, output.name,"data")
 
 
 
